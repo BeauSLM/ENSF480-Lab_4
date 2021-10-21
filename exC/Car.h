@@ -1,3 +1,6 @@
+#include <string>
+#include "Vehicle.h"
+using namespace std;
 class Car: Vehicle {
     private:
         int seats;

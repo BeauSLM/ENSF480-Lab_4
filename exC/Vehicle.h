@@ -1,5 +1,8 @@
-#include <string.h>
-class Vehicle {
+#include <string>
+#include "Moveable.h"
+#include "Resizeable.h"
+using namespace std;
+class Vehicle:Moveable, Resizeable {
     private:
         string name;
     public:
@@ -7,5 +10,5 @@ class Vehicle {
         virtual void move();
         void setName(string);
         string getName();
-        void setName(string)
-}
+        void setName(string);
+};
