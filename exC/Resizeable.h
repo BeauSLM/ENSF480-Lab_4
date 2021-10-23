@@ -1,3 +1,5 @@
+// Resizeable.h
+
 class Resizeable {
     public:
         virtual void enlarge(int) = 0;
