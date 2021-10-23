@@ -1,7 +1,5 @@
 class Resizeable {
-    private:
-
     public:
-        virtual void enlarge(int);
-        virtual void shrink(int);
+        virtual void enlarge(int) = 0;
+        virtual void shrink(int) = 0;
 };

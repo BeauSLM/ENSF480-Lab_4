@@ -1,7 +1,7 @@
 #include <string>
 #include "Vehicle.h"
 using namespace std;
-class Car: Vehicle {
+final class Car: public Vehicle {
     private:
         int seats;
     public:

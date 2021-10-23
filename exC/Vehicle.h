@@ -2,13 +2,12 @@
 #include "Moveable.h"
 #include "Resizeable.h"
 using namespace std;
-class Vehicle:Moveable, Resizeable {
-    private:
+class Vehicle: public Moveable, public Resizeable {
+    protected:
         string name;
     public:
         Vehicle(string);
-        virtual void move();
+        virtual void move() = 0;
         void setName(string);
         string getName();
-        void setName(string);
 };
